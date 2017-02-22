@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 0 0 50px 0;
+}
+
+header {
+  padding: 15px 0;
+  text-align: center;
+  border: 4px inset black;
+}
+content
+{
+  padding: 15px 10px;
+  clear:both;
+  text-align:center;
+
+}
+
+.field {clear:both; text-align:right; line-height:25px;}
+label {float:left; padding-right:10px;}
+.main {float:left}

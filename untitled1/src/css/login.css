@@ -1,0 +1,73 @@
+ .login-nav-btn
+{
+	font-size: 16pt;
+	font-family: monospace;
+	text-align: center;
+	display: inline-block;
+	width: 49.0%;
+	background-color: white;
+	padding: 3px 0px 3px 0px;
+	border-style: solid;
+	border-width: 2px;
+	cursor: pointer;
+}
+
+#login-form-wrap
+{
+	position: relative;
+	width: 54%;
+	left: 32%;
+}
+
+.login-textarea
+{
+	border-style: solid;
+	border-width: 1px;
+}
+
+#summary-name
+{
+	font-size: 24pt;
+	text-align: center;
+	position: relative;
+	width: 60%;
+	left: 20%;
+
+}
+
+.summary-level
+{
+	font-size: 20pt;
+	text-align: left;
+	position: relative;
+	width: 60%;
+	left: 20%;
+}
+
+.summary-percent-good
+{
+	font-size: 20pt;
+	color: green;
+	font-weight: bold;
+	position: relative;
+	width: 60%;
+	left: 20%;
+	text-align: right;
+}
+
+.summary-percent-bad
+{
+	position: relative;
+	width: 60%;
+	left: 20%;
+	display: inline-block;
+	font-size: 20pt;
+	color: red;
+	font-weight: bold;
+	text-align: right;
+}
+
+.wid
+{
+  width: 50%;
+}

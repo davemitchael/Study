@@ -1,0 +1,66 @@
+<div id="wrapper">
+  <div id="header" class="hblock">
+    Модель навичок
+  </div>
+  <div id="content_wrap">
+    <div class="upload-wrap">
+
+        <div id="login-form-wrap">
+          <br>
+          <table>
+            <thead><label >Ім’я&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input id="login-name" class="login-textarea" [(ngModel)]="UserName"/></thead>
+            <thead><label >Прізвище</label>
+            <input id="login-lastname" class="login-textarea"  [(ngModel)]="UserSurename"/></thead>
+
+            <thead><label >Рівень</label></thead>
+            <tr> <label>
+              <input type="radio"name="interviewType" [(ngModel)]="level" value="Новачок" checked/>
+              Новачок
+            </label>
+            </tr>
+
+          <tr>
+          <label >
+            <input type="radio" [(ngModel)]="level" value="Твердий початківець" name="interviewType"/>
+            Твердий початківець
+          </label>
+          </tr>
+            <tr>
+          <label>
+            <input type="radio" name="interviewType"[(ngModel)]="level" value="Компетентний"/>
+            Компетентний
+          </label>
+            </tr>
+          <tr>
+          <label>
+            <input type="radio" name="interviewType" [(ngModel)]="level"value="Досвідчений"/>
+            Досвідчений
+          </label>
+          </tr>
+            <tr>
+          <label>
+            <input type="radio" name="interviewType"[(ngModel)]="level" value="Експерт"/>
+            Експерт
+          </label>
+            </tr>
+            <tr>
+              <label>
+                <input type="radio" name="interviewType"[(ngModel)]="level" value="Усі"/>
+                Усі
+              </label>
+            </tr>
+            <tr>
+
+            </tr>
+          </table>
+      </div>
+      <app-child [levelChild]="level" [userName]="UserName" [userSureName]="UserSurename"></app-child>
+  </div>
+  </div>
+
+  <footer>
+    ст. гр. ПІ-33 Іванців В.І
+    <br>
+    Львів - 2017</footer>
+</div>

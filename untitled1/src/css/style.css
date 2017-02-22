@@ -1,0 +1,62 @@
+body
+{
+	background-color: white;
+	height: auto;
+}
+
+#wrapper
+{
+	background-color: white;
+	border-style: solid;
+	border-width: thin;
+	position: relative;
+	width: 64%;
+	heigh: auto;
+	left: 18%;
+	top: 20px;
+
+	font-family: monospace;
+	color: black;
+}
+
+.hblock
+{
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	padding: 10px;
+	height: auto;
+}
+
+#header
+{
+	font-size: 22pt;
+	text-align: center;
+}
+
+
+.activelink
+{
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: blue;
+}
+
+#content_wrap
+{
+	height: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+#uploaded
+{
+	height: 100%;
+	width: 100%;
+}
+
+footer
+{
+	text-align: center;
+}

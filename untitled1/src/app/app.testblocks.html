@@ -1,0 +1,57 @@
+<button class="btn btn-default btn-lg btn-block" id="qwer" (click)="parseData()">Почати</button>
+<button class="btn btn-default btn-lg btn-block" (click)="clean()">Заново</button>
+
+
+    <div *ngFor="let elem of Dat; let i = index">
+      <div style="border: solid;border-width:1px;">
+        <input type="text" name="inputValue_{{i}}" value="{{elem.level}}" readonly />
+      </div>
+      <div>
+        <div>
+        {{elem.text}}
+        </div>
+      <div *ngFor="let option of elem.answer; let j = index ">
+         <span style="vertical-align:middle;">
+            <input type="radio" style="vertical-align:middle;" name="option_question_{{elem.level}}{{i}}" value="{{option.mark}}" />
+           {{option.text}}
+         </span>
+    </div>
+      </div>
+    </div>
+
+      <div *ngIf="condition">
+      <button class="btn btn-default btn-lg btn-block" (click)="suma()">Відповісти</button>
+    </div>
+
+<div >
+  <table width="20" height="200" cellspacing=1 cellpadding=0 border=0>
+    <tr valign = bottom width = 10 >
+      <td  height="200" *ngFor="let item of score; let i = index">
+        <img src="" width="84" height="0" class="image{{i}}" name="{{i}}">
+      </td>
+    </tr>
+
+    <tr valign = top  width="100" align = center>
+      <td height="40"><small>Новачок</small></td>
+      <td height="40"><small>Твердий почтаківець</small></td>
+      <td height="40"><small>Компетентний</small></td>
+      <td height="40"><small>Досвідчений</small></td>
+      <td height="40"><small>Експерт</small></td>
+    </tr>
+  </table>
+    <!--
+
+    <label>{{userName}} {{userSureName}} </label>
+    <label>{{levelChild}}: {{Sum}} з 15 </label>-->
+  </div>
+
+<!--
+
+  <label>
+       <input type="radio"  name="testanswer0" >
+    <div>
+       {{text.answer[text.answer.length-1].text}}
+    </div>
+  </label>
+-->
+
